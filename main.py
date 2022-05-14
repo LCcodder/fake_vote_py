@@ -14,10 +14,6 @@ options = webdriver.ChromeOptions()
 options.add_argument("start-maximized")
 
 
-PROXY = "23.23.23.23:3128"
-
-options.add_argument('--proxy-server=http://%s' % PROXY)
-
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 driver = webdriver.Chrome(options=options)
